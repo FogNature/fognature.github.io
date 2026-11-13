@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="ru" data-type="service" data-radius="soft" data-motion>
+<head>
+  <meta charset="utf-8">
+  <script>
+    history.scrollRestoration = 'manual';
+    window.addEventListener('pageshow', event => {
+      if (event.persisted && !location.hash) window.scrollTo(0, 0);
+    });
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Павел Гершевич, Lead Flutter-разработчик из Красноярска. Опыт, статьи, выступления и книга «Основы Flutter».">
+  <meta name="site-kind" content="other">
+  <meta name="page-type" content="service">
+  <meta name="robots" content="noindex">
+  <meta property="og:title" content="Павел Гершевич — Lead Flutter-разработчик">
+  <meta property="og:description" content="Опыт, статьи, выступления и книга «Основы Flutter».">
+  <meta property="og:image" content="assets/microphone-cutout.webp">
+  <title>Павел Гершевич — Lead Flutter-разработчик</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/motion/motion.css">
+  <link rel="stylesheet" href="assets/moments/picture-develops/moment.css">
+  <link rel="stylesheet" href="assets/moments/word-highlight/moment.css">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('m-enter');setTimeout(()=>document.documentElement.classList.add('m-enter-done'),700)</script>
+  <script src="talks.js" defer></script>
+  <script src="event-photos.js" defer></script>
+  <script src="preview.js" defer></script>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" class="symbols" aria-hidden="true">
+    <symbol id="arrow-diagonal" viewBox="0 0 24 24"><path d="M6 18 18 6M8 6h10v10"/></symbol>
+    <symbol id="arrow-left" viewBox="0 0 24 24"><path d="m14 6-6 6 6 6"/></symbol>
+    <symbol id="arrow-right" viewBox="0 0 24 24"><path d="m10 6 6 6-6 6"/></symbol>
+    <symbol id="arrow-up" viewBox="0 0 24 24"><path d="M12 19V5m-6 6 6-6 6 6"/></symbol>
+    <symbol id="video-icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3Z"/></symbol>
+    <symbol id="website-icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.5"/><path d="M3 9h18"/></symbol>
+    <symbol id="menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16"/></symbol>
+    <symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="github-mark" viewBox="0 0 16 16"><path fill="currentColor" stroke="none" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></symbol>
+    <symbol id="course" viewBox="0 0 24 24"><path d="m3 9 9-5 9 5-9 5-9-5Zm4 3v5l5 3 5-3v-5"/></symbol>
+    <symbol id="telegram-mark" viewBox="0 0 24 24"><path d="m3 10.5 18-7-4 17-5.5-4-3 2.5v-5l8-6-10 5Z"/></symbol>
+    <symbol id="vk-mark" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M13.07 18.55c-7.17 0-11.25-4.91-11.42-13.1h3.59c.11 6 2.76 8.55 4.86 9.08V5.45h3.38v5.18c2.08-.22 4.26-2.58 5-5.18h3.38c-.56 3.2-2.93 5.56-4.61 6.53 1.68.79 4.38 2.85 5.4 6.57h-3.72c-.8-2.49-2.8-4.42-5.45-4.68v4.68h-.41Z"/></symbol>
+    <symbol id="stack-overflow-mark" viewBox="0 0 24 24"><path d="M5 16v5h14v-5M8 17h8m-8-3 8 1.5M9.5 10.5l7.5 3M12 7l6.5 5M16 3l4.5 7.5"/></symbol>
+    <symbol id="habr-mark" viewBox="0 0 24 24"><path d="M6 3v18m0-8a6 6 0 0 1 12 0v8" stroke-width="3"/></symbol>
+    <symbol id="mail-icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="phone-icon" viewBox="0 0 24 24"><path d="M6 3h3l2 5-2 2a12 12 0 0 0 5 5l2-2 5 2v3a3 3 0 0 1-3 3A17 17 0 0 1 3 6a3 3 0 0 1 3-3Z"/></symbol>
+    <symbol id="copy-icon" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#home">К содержанию</a>
+  <div class="sticky">
+    <header class="site-header">
+      <div class="site-nav wrap">
+        <a href="#" class="wordmark">FogNature<span></span></a>
+        <button type="button" class="nav-toggle icon-button" aria-label="Меню" aria-controls="navigation" aria-expanded="false"><svg aria-hidden="true"><use href="#menu"/></svg></button>
+        <nav id="navigation" aria-label="Разделы сайта">
+          <a href="#about">Обо мне</a><a href="#blog">Блог</a><a href="#talks">Выступления</a><a href="#contacts">Контакты</a>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <main id="home" tabindex="-1">
+    <!-- Личное портфолио. Композиция по локальным референсам, фото и два приёма движения taste-skill. -->
+    <section class="wrap hero hero--photo hero-layers" aria-labelledby="hero-title" data-enter>
+      <div class="hero-stage">
+        <div class="hero-text">
+          <h1 id="hero-title" class="layer-type" data-enter-whole><span>Павел</span> <span>Гершевич</span></h1>
+          <figure class="hero-portrait"><img src="assets/microphone-cutout.webp" alt="Павел Гершевич с микрофоном" fetchpriority="high" width="840" height="1120"></figure>
+          <div class="hero-outline" aria-hidden="true"><div class="layer-type"><span>Павел</span> <span>Гершевич</span></div></div>
+          <div class="hero-notes"><div class="hero-role glass"><span>FogNature</span><p>Lead Flutter-разработчик</p></div></div>
+        </div>
+      </div>
+    </section>
+    <section id="about" aria-label="Обо мне">
+      <div class="wrap about-body">
+        <p class="hero-intro mo-wh__text" data-moment="word-highlight">Руковожу командами мобильной разработки и <strong>проектирую архитектуру сложных Flutter-приложений</strong>. Начинал с Android, а теперь пишу и выступаю о Flutter.</p>
+        <dl class="stats" aria-label="Опыт в цифрах">
+          <div><dt>Лет в мобильной разработке</dt><dd>12<span>+</span></dd></div>
+          <div><dt>Лет с Flutter</dt><dd>8<span>+</span></dd></div>
+          <div><dt>Проектов</dt><dd>20<span>+</span></dd></div>
+          <div><dt>Выступлений</dt><dd>30<span>+</span></dd></div>
+        </dl>
+
+        <div class="profile-grid">
+          <div class="experience glass">
+            <h2>Опыт работы</h2>
+            <ol class="timeline">
+              <li>
+                <div class="timeline-entry"><span class="time">2024–2026</span><div><h3>Amiga</h3><p>Mobile Team Lead</p></div></div>
+              </li>
+              <li>
+                <div class="timeline-entry"><span class="time">2023–2024</span><div><h3>СФУ</h3><p>Руководитель программы цифровой кафедры</p></div></div>
+              </li>
+              <li>
+                <div class="timeline-entry"><span class="time">2017–2024</span><div><h3>Аспирити</h3>
+                  <p>Руководитель отдела мобильной разработки <span class="role-period">2022–2024</span></p>
+                </div></div>
+              </li>
+              <li>
+                <div class="timeline-entry"><span class="time">2013–2017</span><div><h3>Фриланс</h3><p>Android-разработчик</p></div></div>
+              </li>
+            </ol>
+          </div>
+          <div class="city glass" id="city">
+            <div class="city-map">
+              <a class="map-link" href="https://www.openstreetmap.org/#map=10/56.025/92.896" target="_blank" rel="noopener" aria-label="Красноярск на карте OpenStreetMap">
+                <img src="assets/krasnoyarsk-monochrome.webp" alt="" width="950" height="768" loading="lazy">
+              </a>
+            </div>
+            <div class="city-name"><h2>Красноярск</h2><p>Россия</p></div>
+            <a class="map-credit" href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band blog" id="blog">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>Блог</h2>
+          <div class="rail-controls" data-controls="article-rail" hidden>
+            <button class="icon-button" type="button" data-step="-1" aria-label="Предыдущая статья"><svg aria-hidden="true"><use href="#arrow-left"/></svg></button>
+            <button class="icon-button" type="button" data-step="1" aria-label="Следующая статья"><svg aria-hidden="true"><use href="#arrow-right"/></svg></button>
+          </div>
+        </div>
+        <div class="rail" id="article-rail" tabindex="0" role="region" aria-label="Лента статей">
+          <article class="article card">
+            <img src="assets/blog/1097448-preview.webp" srcset="assets/blog/1097448-small.webp 460w, assets/blog/1097448-preview.webp 780w" sizes="(max-width: 760px) max(218px, 70vw), (max-width: 1383px) 29vw, 395px" width="780" height="440" alt="" loading="lazy">
+            <div class="card-body">
+              <time class="article-date" datetime="2026-10-22">22 октября 2026</time>
+              <h3>Перехватываем запросы из Flutter приложения или как мы настраиваем Charles Proxy для тестировщиков</h3>
+              <a class="text-action" href="https://habr.com/ru/articles/1097448/" target="_blank" rel="noopener">Читать</a>
+            </div>
+          </article>
+          <article class="article card">
+            <img src="assets/blog/1051626-preview.webp" srcset="assets/blog/1051626-small.webp 460w, assets/blog/1051626-preview.webp 820w" sizes="(max-width: 760px) max(218px, 70vw), (max-width: 1383px) 29vw, 395px" width="1280" height="720" alt="" loading="lazy">
+            <div class="card-body">
+              <time class="article-date" datetime="2026-06-25">25 июня 2026</time>
+              <h3>Динамические иконки приложения на Flutter: подробная инструкция для ручного выбора и обновлений по воздуху</h3>
+              <a class="text-action" href="https://habr.com/ru/articles/1051626/" target="_blank" rel="noopener">Читать</a>
+            </div>
+          </article>
+          <article class="article card">
+            <img src="assets/blog/1031212-preview.webp" srcset="assets/blog/1031212-small.webp 460w, assets/blog/1031212-preview.webp 820w" sizes="(max-width: 760px) max(218px, 70vw), (max-width: 1383px) 29vw, 395px" width="1560" height="877" alt="" loading="lazy">
+            <div class="card-body">
+              <time class="article-date" datetime="2026-05-05">5 мая 2026</time>
+              <h3>Прокачиваем локальный поиск на Dart и Flutter</h3>
+              <a class="text-action" href="https://habr.com/ru/articles/1031212/" target="_blank" rel="noopener">Читать</a>
+            </div>
+          </article>
+          <article class="article card">
+            <img src="assets/blog/1018286-preview.webp" srcset="assets/blog/1018286-small.webp 460w, assets/blog/1018286-preview.webp 820w" sizes="(max-width: 760px) max(218px, 70vw), (max-width: 1383px) 29vw, 395px" width="1560" height="877" alt="" loading="lazy">
+            <div class="card-body">
+              <time class="article-date" datetime="2026-04-03">3 апреля 2026</time>
+              <h3>Обновляем токен авторизации при помощи Dio</h3>
+              <a class="text-action" href="https://habr.com/ru/articles/1018286/" target="_blank" rel="noopener">Читать</a>
+            </div>
+          </article>
+          <article class="article card">
+            <img src="assets/blog/869208-preview.webp" srcset="assets/blog/869208-small.webp 460w, assets/blog/869208-preview.webp 820w" sizes="(max-width: 760px) max(218px, 70vw), (max-width: 1383px) 29vw, 395px" width="2560" height="1440" alt="" loading="lazy">
+            <div class="card-body">
+              <time class="article-date" datetime="2024-12-24">24 декабря 2024</time>
+              <h3>Делаем кастомный трансформер для BLoC</h3>
+              <a class="text-action" href="https://habr.com/ru/articles/869208/" target="_blank" rel="noopener">Читать</a>
+            </div>
+          </article>
+          <article class="article card">
+            <img src="assets/blog/837646-preview.webp" srcset="assets/blog/837646-small.webp 460w, assets/blog/837646-preview.webp 72w" sizes="(max-width: 760px) max(218px, 70vw), (max-width: 1383px) 29vw, 395px" width="72" height="72" alt="" loading="lazy">
+            <div class="card-body">
+              <time class="article-date" datetime="2024-08-22">22 августа 2024</time>
+              <h3>Тестирование BLoC</h3>
+              <a class="text-action" href="https://habr.com/ru/articles/837646/" target="_blank" rel="noopener">Читать</a>
+            </div>
+          </article>
+          <article class="article card">
+            <img src="assets/blog/837330-preview.webp" srcset="assets/blog/837330-small.webp 460w, assets/blog/837330-preview.webp 72w" sizes="(max-width: 760px) max(218px, 70vw), (max-width: 1383px) 29vw, 395px" width="72" height="72" alt="" loading="lazy">
+            <div class="card-body">
+              <time class="article-date" datetime="2024-08-20">20 августа 2024</time>
+              <h3>Руководство по deep links в Flutter-приложениях</h3>
+              <a class="text-action" href="https://habr.com/ru/articles/837330/" target="_blank" rel="noopener">Читать</a>
+            </div>
+          </article>
+          <article class="article card">
+            <img src="assets/blog/836226-preview.webp" srcset="assets/blog/836226-small.webp 460w, assets/blog/836226-preview.webp 800w" sizes="(max-width: 760px) max(218px, 70vw), (max-width: 1383px) 29vw, 395px" width="800" height="450" alt="" loading="lazy">
+            <div class="card-body">
+              <time class="article-date" datetime="2024-08-15">15 августа 2024</time>
+              <h3>Полный гайд по тестированию на Flutter. Часть 9: Best practices написания Unit-тестов</h3>
+              <a class="text-action" href="https://habr.com/ru/articles/836226/" target="_blank" rel="noopener">Читать</a>
+            </div>
+          </article>
+          <article class="article card">
+            <img src="assets/blog/835506-preview.webp" srcset="assets/blog/835506-small.webp 460w, assets/blog/835506-preview.webp 72w" sizes="(max-width: 760px) max(218px, 70vw), (max-width: 1383px) 29vw, 395px" width="72" height="72" alt="" loading="lazy">
+            <div class="card-body">
+              <time class="article-date" datetime="2024-08-12">12 августа 2024</time>
+              <h3>Полный гайд по тестированию на Flutter. Части 7-8: Ошибки, которые усложняют написание тестов</h3>
+              <a class="text-action" href="https://habr.com/ru/articles/835506/" target="_blank" rel="noopener">Читать</a>
+            </div>
+          </article>
+          <article class="article card">
+            <img src="assets/blog/834568-preview.webp" srcset="assets/blog/834568-small.webp 460w, assets/blog/834568-preview.webp 72w" sizes="(max-width: 760px) max(218px, 70vw), (max-width: 1383px) 29vw, 395px" width="72" height="72" alt="" loading="lazy">
+            <div class="card-body">
+              <time class="article-date" datetime="2024-08-07">7 августа 2024</time>
+              <h3>Что нового в Flutter 3.24?</h3>
+              <a class="text-action" href="https://habr.com/ru/articles/834568/" target="_blank" rel="noopener">Читать</a>
+            </div>
+          </article>
+          <article class="article card">
+            <img src="assets/blog/833894-preview.webp" srcset="assets/blog/833894-small.webp 460w, assets/blog/833894-preview.webp 72w" sizes="(max-width: 760px) max(218px, 70vw), (max-width: 1383px) 29vw, 395px" width="72" height="72" alt="" loading="lazy">
+            <div class="card-body">
+              <time class="article-date" datetime="2024-08-05">5 августа 2024</time>
+              <h3>Полный гайд по тестированию на Flutter. Часть 6: Тестовые двойники: Faking vs Mocking</h3>
+              <a class="text-action" href="https://habr.com/ru/articles/833894/" target="_blank" rel="noopener">Читать</a>
+            </div>
+          </article>
+          <article class="article card">
+            <img src="assets/blog/833390-preview.webp" srcset="assets/blog/833390-small.webp 460w, assets/blog/833390-preview.webp 820w" sizes="(max-width: 760px) max(218px, 70vw), (max-width: 1383px) 29vw, 395px" width="1280" height="720" alt="" loading="lazy">
+            <div class="card-body">
+              <time class="article-date" datetime="2024-08-02">2 августа 2024</time>
+              <h3>Полный гайд по тестированию на Flutter. Часть 5: Mocktail</h3>
+              <a class="text-action" href="https://habr.com/ru/articles/833390/" target="_blank" rel="noopener">Читать</a>
+            </div>
+          </article>
+          <article class="article card">
+            <img src="assets/blog/832918-preview.webp" srcset="assets/blog/832918-small.webp 460w, assets/blog/832918-preview.webp 800w" sizes="(max-width: 760px) max(218px, 70vw), (max-width: 1383px) 29vw, 395px" width="800" height="450" alt="" loading="lazy">
+            <div class="card-body">
+              <time class="article-date" datetime="2024-08-01">1 августа 2024</time>
+              <h3>Полный гайд по тестированию на Flutter. Часть 4: продвинутое модульное тестирование</h3>
+              <a class="text-action" href="https://habr.com/ru/articles/832918/" target="_blank" rel="noopener">Читать</a>
+            </div>
+          </article>
+          <article class="article card">
+            <img src="assets/blog/831094-preview.webp" srcset="assets/blog/831094-small.webp 460w, assets/blog/831094-preview.webp 72w" sizes="(max-width: 760px) max(218px, 70vw), (max-width: 1383px) 29vw, 395px" width="72" height="72" alt="" loading="lazy">
+            <div class="card-body">
+              <time class="article-date" datetime="2024-07-25">25 июля 2024</time>
+              <h3>Полный гайд по тестированию на Flutter. Часть 3: Mocking и Stubbing</h3>
+              <a class="text-action" href="https://habr.com/ru/articles/831094/" target="_blank" rel="noopener">Читать</a>
+            </div>
+          </article>
+          <article class="article card">
+            <img src="assets/blog/830762-preview.webp" srcset="assets/blog/830762-small.webp 460w, assets/blog/830762-preview.webp 781w" sizes="(max-width: 760px) max(218px, 70vw), (max-width: 1383px) 29vw, 395px" width="781" height="440" alt="" loading="lazy">
+            <div class="card-body">
+              <time class="article-date" datetime="2024-07-23">23 июля 2024</time>
+              <h3>Полный гайд по тестированию на Flutter. Часть 2: Простые модульные тесты</h3>
+              <a class="text-action" href="https://habr.com/ru/articles/830762/" target="_blank" rel="noopener">Читать</a>
+            </div>
+          </article>
+          <article class="article card">
+            <img src="assets/blog/829904-preview.webp" srcset="assets/blog/829904-small.webp 460w, assets/blog/829904-preview.webp 800w" sizes="(max-width: 760px) max(218px, 70vw), (max-width: 1383px) 29vw, 395px" width="800" height="450" alt="" loading="lazy">
+            <div class="card-body">
+              <time class="article-date" datetime="2024-07-19">19 июля 2024</time>
+              <h3>Полный гайд по тестированию на Flutter. Часть 1: Знакомство с методами тестирования</h3>
+              <a class="text-action" href="https://habr.com/ru/articles/829904/" target="_blank" rel="noopener">Читать</a>
+            </div>
+          </article>
+        </div>
+        <button class="text-action" type="button" id="toggle-article-view" aria-controls="article-rail" aria-expanded="false" hidden>Показать все</button>
+      </div>
+    </section>
+
+    <section class="band" id="talks">
+      <div class="wrap talks section-panel">
+        <div class="section-heading">
+          <h2>Выступления</h2>
+          <div class="rail-controls" data-controls="talk-rail" hidden>
+            <button class="icon-button" type="button" data-step="-1" aria-label="Предыдущее выступление"><svg aria-hidden="true"><use href="#arrow-left"/></svg></button>
+            <button class="icon-button" type="button" data-step="1" aria-label="Следующее выступление"><svg aria-hidden="true"><use href="#arrow-right"/></svg></button>
+          </div>
+        </div>
+        <div class="filters">
+          <div class="types" role="group" aria-label="Тип мероприятия">
+            <button type="button" data-type="conference" aria-pressed="true">Доклады</button>
+            <button type="button" data-type="meetup" aria-pressed="false">Митапы</button>
+            <button type="button" data-type="panel" aria-pressed="false">Круглые столы</button>
+          </div>
+          <div class="types year-types" role="group" aria-label="Год выступления">
+            <button type="button" data-filter-year="" aria-pressed="true">Все годы</button>
+          </div>
+        </div>
+        <div class="rail" id="talk-rail" tabindex="0" role="region" aria-label="Лента выступлений"></div>
+        <template id="talk-card">
+          <article class="talk card">
+            <p class="event"></p>
+            <h3></h3>
+            <div class="talk-footer">
+              <p class="event-meta"></p>
+              <div class="talk-actions">
+                <a class="icon-button" data-link="recording" target="_blank" rel="noopener" aria-label="Смотреть запись" title="Смотреть запись"><svg aria-hidden="true"><use href="#video-icon"/></svg></a>
+                <a class="icon-button" data-link="website" target="_blank" rel="noopener" aria-label="Открыть страницу мероприятия" title="Открыть страницу мероприятия"><svg aria-hidden="true"><use href="#website-icon"/></svg></a>
+              </div>
+            </div>
+          </article>
+        </template>
+        <div class="types talk-view-toggle">
+          <button type="button" id="toggle-talk-view" aria-controls="talk-rail" aria-expanded="false" hidden>Показать все</button>
+        </div>
+        <p class="empty" role="status" hidden>За выбранный год выступлений этого типа пока нет.</p>
+      </div>
+    </section>
+
+    <section class="band gallery-band" id="gallery">
+      <div class="wrap">
+        <div class="section-heading"><h2>Фото с мероприятий</h2></div>
+        <div class="gallery" id="event-gallery"></div>
+        <button class="text-action" type="button" id="more-photos" aria-controls="event-gallery" hidden>Показать ещё</button>
+      </div>
+    </section>
+
+    <section class="band" id="book" aria-labelledby="book-title">
+      <div class="wrap book book-layout section-panel">
+        <figure class="book-art" data-moment="picture-develops"><img src="assets/book.png" srcset="assets/book-small.webp 400w, assets/book-preview.webp 560w" sizes="(max-width: 760px) 210px, 263px" width="640" height="1100" alt="Обложка книги «Основы Flutter»" loading="lazy"></figure>
+        <div class="book-copy">
+          <h2 id="book-title">Основы Flutter</h2>
+          <p class="authors">Станислав Чернышев, Юрий Петров, Станислав Ильин и Павел Гершевич</p>
+          <p class="edition">Питер, 2025</p>
+          <p class="annotation">Книга предназначена для всех, кто хочет погрузиться в эффективную кроссплатформенную разработку с Flutter. Вы не только изучите синтаксис языка Dart и основы фреймворка, но и сразу примените знания на практике, разрабатывая проект, который развивается на протяжении всей книги. После каждой новой темы вас ждут задания по доработке его кодовой базы, что позволит уверенно прокачать свои hard-скиллы.</p>
+          <div class="book-actions">
+            <a class="icon-button" href="https://github.com/MADTeacher/flutter_basics" target="_blank" rel="noopener" aria-label="Примеры кода на GitHub" title="GitHub"><svg aria-hidden="true"><use href="#github-mark"/></svg></a>
+            <a class="icon-button" href="https://www.piter.com/product/osnovy-flutter" target="_blank" rel="noopener" aria-label="Издательство «Питер»" title="Издательство «Питер»"><img src="assets/piter-logo.png" width="200" height="188" alt="" loading="lazy"></a>
+            <a class="icon-button" href="https://stepik.org/a/197817" target="_blank" rel="noopener" aria-label="Курс на Stepik" title="Stepik"><svg aria-hidden="true"><use href="#course"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="band contacts" id="contacts">
+    <div class="wrap">
+      <div class="section-heading"><h2>Контакты</h2></div>
+      <ul class="contact-links">
+        <li><a href="https://t.me/fognature" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#telegram-mark"/></svg>Профиль Telegram <svg aria-hidden="true"><use href="#arrow-diagonal"/></svg></a></li>
+        <li><a class="channel" href="https://t.me/ftl_notes" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#telegram-mark"/></svg>Канал Telegram <svg aria-hidden="true"><use href="#arrow-diagonal"/></svg></a></li>
+        <li><a href="https://vk.ru/fognaturethejew" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#vk-mark"/></svg>VK <svg aria-hidden="true"><use href="#arrow-diagonal"/></svg></a></li>
+        <li><a href="https://github.com/FogNature" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#github-mark"/></svg>GitHub <svg aria-hidden="true"><use href="#arrow-diagonal"/></svg></a></li>
+        <li><a href="https://stackoverflow.com/users/6438386/fognature" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#stack-overflow-mark"/></svg>Stack Overflow <svg aria-hidden="true"><use href="#arrow-diagonal"/></svg></a></li>
+        <li><a href="https://habr.com/ru/users/fognature1/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#habr-mark"/></svg>Хабр <svg aria-hidden="true"><use href="#arrow-diagonal"/></svg></a></li>
+        <li><button type="button" data-copy-contact="Почта" aria-label="Скопировать почту fognaturedevelop@gmail.com"><svg aria-hidden="true"><use href="#mail-icon"/></svg><span>fognaturedevelop@gmail.com</span><svg aria-hidden="true"><use href="#copy-icon"/></svg></button></li>
+        <li><button type="button" data-copy-contact="Телефон" aria-label="Скопировать телефон +79994425791"><svg aria-hidden="true"><use href="#phone-icon"/></svg><span>+79994425791</span><svg aria-hidden="true"><use href="#copy-icon"/></svg></button></li>
+      </ul>
+      <p class="contact-status" role="status"></p>
+      <div class="footer-base"><span>Павел Гершевич · FogNature</span><a href="#">Наверх <svg aria-hidden="true"><use href="#arrow-up"/></svg></a></div>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" aria-label="Фото с мероприятия">
+    <form method="dialog"><button class="icon-button" aria-label="Закрыть"><svg aria-hidden="true"><use href="#close"/></svg></button></form>
+    <img alt="Фото с мероприятия">
+  </dialog>
+</body>
+</html>
